@@ -58,7 +58,11 @@ python main.py --method POST -H "Authorization: Bearer TOKEN" -D "username=alice
 
 This command sends a POST request with custom headers and data to the specified URL.
 
-## License
+## Course Information
+- **Course**: Internet Engineering
+- **University**: Amirkabir University of Technology  
+- **Semester**: Spring 2020
 
-This project is licensed under the [License Name] license - see the [LICENSE](LICENSE) file for details.
+Let me know if you have any questions!
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
