@@ -1,5 +1,7 @@
 # HTTP Client
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 This Python script serves as an HTTP request client and is the solution to the first practical assignment for the Internet Engineering course at Amirkabir University of Technology, Spring 2020.
 The assignment instructions are described in the `instructions.pdf` file, in Persian.
 
@@ -65,4 +67,3 @@ This command sends a POST request with custom headers and data to the specified 
 
 Let me know if you have any questions!
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
