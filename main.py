@@ -168,15 +168,18 @@ def pprint_response(response):
 
 @click.command()
 @click.argument('url')
-@click.option('-M', '--method',
+@click.option('-M', '--method', default='GET',
               type=click.Choice(['GET', 'POST', 'PATCH', 'DELETE', 'PUT'], case_sensitive=False),
-              default='GET')
-@click.option('-H', '--headers', multiple=True)
-@click.option('-Q', '--queries', multiple=True)
-@click.option('-D', '--data')
-@click.option('--json', 'json_str')
-@click.option('--file', 'file_path', type=click.Path(exists=True))
-@click.option('--timeout', type=int)
+              help="The HTTP method to use for the request.")
+@click.option('-H', '--headers', multiple=True,
+              help="Custom headers to include in the request. Use multiple times for multiple headers.")
+@click.option('-Q', '--queries', multiple=True,
+              help="Query parameters to include in the request. Use multiple times for multiple parameters.")
+@click.option('-D', '--data', help="Raw data to include in the request body.")
+@click.option('--json', 'json_str', help="JSON data to include in the request body.")
+@click.option('--file', 'file_path', type=click.Path(exists=True),
+              help="Path to a file to include in the request as a file attachment.")
+@click.option('--timeout', type=int, help="Timeout for the request in seconds.")
 def main(url, method, headers, queries, data, json_str, file_path, timeout):
     url = validate_url(url)
     method = validate_method(method)
