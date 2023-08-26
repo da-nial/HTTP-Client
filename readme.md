@@ -1,7 +1,5 @@
 # HTTP Client
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 This Python script serves as an HTTP request client and is the solution to the first practical assignment for the Internet Engineering course at Amirkabir University of Technology, Spring 2020.
 The assignment instructions are described in the `instructions.pdf` file, in Persian.
 
@@ -14,7 +12,7 @@ The script allows users to send HTTP requests to specified URLs with various con
 - Send HTTP requests using various methods (GET, POST, PUT, PATCH, DELETE).
 - Configure request headers and query parameters.
 - Include request data, JSON payloads, or upload files.
-- Handle response headers and body, including content of different media types.
+- Handle response headers and body, including the content of different media types.
 - Download and display HTML content, if applicable.
 - Supports custom timeouts for requests.
 
@@ -42,7 +40,7 @@ Follow these steps to use the HTTP Request Client:
 
 ## Options
 
-- `-M`, `--method`: Specify the HTTP method (GET, POST, PUT, PATCH, DELETE). Default is GET.
+- `-M`, `--method`: Specify the HTTP method (GET, POST, PUT, PATCH, DELETE). The default is GET.
 - `-H`, `--headers`: Specify headers for the request. You can use this option multiple times for multiple headers.
 - `-Q`, `--queries`: Specify query parameters for the request. You can use this option multiple times for multiple query parameters.
 - `-D`, `--data`: Include data for the request. Used for POST requests with `application/x-www-form-urlencoded` data.
